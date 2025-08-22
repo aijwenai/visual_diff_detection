@@ -34,6 +34,7 @@ Feel free to use the curated images in /res to kick off your journey!
 * **More Comparison Algorithms:** Add support for different diffing algorithms to provide more nuanced comparisons.
 * **Real-time Collaboration:** Allow multiple users to view and interact with the same comparison results in real-time.
 * **Automated Testing Integration:** Provide an API endpoint for automated testing tools to trigger comparisons and retrieve results.
+* **E2E tests for frontend:** Implement end-to-end tests for the frontend to ensure the user interface works as expected.
 
 ## Challenges
 * **Performance with Large Images:** Processing large images on the backend can be slow and memory-intensive. This was mitigated by resizing images before comparison, but a more robust solution would be needed for a production environment.
