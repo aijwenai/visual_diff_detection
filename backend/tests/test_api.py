@@ -29,7 +29,7 @@ def comparison_id():
 def test_read_main():
     response = client.get("/")
     assert response.status_code == 200
-    assert response.json() == {"message": "Duku AI Visual Regression MVP"}
+    assert response.json() == {"message": "Visual Regression MVP"}
 
 def test_create_comparison_success(comparison_id):
     assert comparison_id is not None

@@ -17,4 +17,4 @@ app.include_router(comp_router, prefix="/api")
 
 @app.get("/")
 def root():
-    return {"message": "Duku AI Visual Regression MVP"}
+    return {"message": "Visual Regression MVP"}

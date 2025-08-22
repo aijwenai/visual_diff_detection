@@ -18,11 +18,28 @@ A web-based application for comparing two images and highlighting their differen
 ## Getting Started
 
 To get the application running locally, follow the instructions in the `backend/README.md` and `frontend/README.md` files.
-Feel free to use the curated images in /res to kick off!
-## Project Structure
+Feel free to use the curated images in /res to kick off your journey!
 
-- `backend/`: The FastAPI application that handles image processing and comparison.
+## Project Structure
+- `backend/`: The FastAPI application that handles image processing and comparison as well as necessary tests.
 - `frontend/`: The React application that provides the user interface.
+
+## Assumptions
+* The primary users of this application are developers or QA testers who need a simple tool for visual regression testing.
+* The application would be hosted in a trusted environment, so the current API key authentication is sufficient for security.
+* Users are technically savvy enough to understand the concept of a sensitivity threshold and how to draw ignore regions.
+
+## Future Improvements
+* **User Accounts:** Implement a user authentication system to allow users to save their comparison history and settings.
+* **More Comparison Algorithms:** Add support for different diffing algorithms to provide more nuanced comparisons.
+* **Real-time Collaboration:** Allow multiple users to view and interact with the same comparison results in real-time.
+* **Automated Testing Integration:** Provide an API endpoint for automated testing tools to trigger comparisons and retrieve results.
+
+## Challenges
+* **Performance with Large Images:** Processing large images on the backend can be slow and memory-intensive. This was mitigated by resizing images before comparison, but a more robust solution would be needed for a production environment.
+* **Frontend State Management:** Managing the state of the image uploads, comparison settings, and results on the frontend was complex. Using a state management library like Redux or Zustand could simplify this.
+* **Cross-Browser Compatibility:** Ensuring that the application works consistently across different web browsers was a challenge, especially with the canvas-based region selection.
+
 
 ## License
 

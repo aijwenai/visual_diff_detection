@@ -38,7 +38,7 @@ function App() {
   }
   return (
     <div style={{ padding: 20, fontFamily: 'Arial, sans-serif', maxWidth: 1200, margin: '0 auto' }}>
-      <h1 style={{ color: '#333', marginBottom: 30 }}>Duku AI Visual Regression MVP</h1>
+      <h1 style={{ color: '#333', marginBottom: 30 }}>Visual Regression MVP</h1>
       <div style={{ display: 'flex', gap: 20, marginBottom: 20 }}>
         <FileUpload
           label="Before Image"
