@@ -18,7 +18,7 @@ A web-based application for comparing two images and highlighting their differen
 ## Getting Started
 
 To get the application running locally, follow the instructions in the `backend/README.md` and `frontend/README.md` files.
-
+Feel free to use the curated images in /res to kick off!
 ## Project Structure
 
 - `backend/`: The FastAPI application that handles image processing and comparison.
